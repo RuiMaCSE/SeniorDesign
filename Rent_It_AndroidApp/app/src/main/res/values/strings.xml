@@ -71,4 +71,25 @@
     <string name="action_logout">Logout</string>
     <string name="action_mark_all_read">Mark All as Read</string>
     <string name="privacy_policy">Privacy Policy</string>
+    <string name="my_account">My Account</string>
+    <string name="nick_name">nick name</string>
+    <string name="name">NAME</string>
+    <string name="email">EMAIL</string>
+    <string name="your_email_address">Your Email address</string>
+    <string name="your_real_name">Your real name</string>
+
+
+
+
+    <string-array name="names">
+                 <item >Person1</item>
+                 <item >Person2</item>
+                 <item >Person3</item>
+                 <item >Person4</item>
+                 <item >Person5</item>
+                 <item >Person6</item>
+                 <item >Person7</item>
+                 <item >Person8</item>
+                 <item >Person9</item>
+             </string-array>
 </resources>
