@@ -11,11 +11,23 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+
+import android.widget.TextView;//test
+import android.widget.AbsListView;
+import android.widget.AdapterView;
+import android.widget.SimpleAdapter;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+
+
+import android.widget.ListView;
 import android.widget.Toast;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.CoordinatorLayout;
 
@@ -32,6 +44,8 @@ import com.rent_it_app.rent_it.activity.FragmentDrawer;
 import com.rent_it_app.rent_it.activity.FriendsFragment;
 import com.rent_it_app.rent_it.activity.HomeFragment;
 import com.rent_it_app.rent_it.activity.MessagesFragment;
+
+
 
 public class MainActivity extends BaseActivity
         implements FragmentDrawer.FragmentDrawerListener{
@@ -50,11 +64,54 @@ public class MainActivity extends BaseActivity
     private String userId;
     private static final String TAG = "Main";
 
+    //text
+//声明ListView控件
+    private ListView listView;
+    //创建简单适配器(并不简单,功能很强大)
+    private SimpleAdapter simpleAdapter;
+    //定义List泛型集合,里面存放的是Map键值对, listDate作为ListView的数据源
+    private List<Map<String, Object>> listDate;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        /*
+         * requestWindowFeature(Window.FEATURE_NO_TITLE);
+         * 这段代码的目的是为了去除Activity的头部,在myEclipse里面设置有效,
+         * 但在Android Studio无效
+         *
+         * 而且在AndroidManifest.xml 修改这段代码程序会崩溃,可见Android Studio也有
+         * 美中不足的地方,相信会有其他的解决办法,此时此处暂且搁置
+         * android:theme="@android:style/Theme.NoTitleBar"
+         * Android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+         */
         setContentView(R.layout.activity_main);
+        //得到ListView控件
+        listView = (ListView) findViewById(R.id.listView);
+
+        /*
+         * 把ListView要显示的图片和文字声明出来,暂时存放在数组中,为插入到listDate做准备
+         * 三个数组对应三个不同的显示信息,ListView每一个Item会根据你自定义的
+         * 布局样式依次显示img[1],text1[1],text2[1]的内容
+         * 其实我们还差一个,就是最右边的播放图标,由于每一个item的图标都是相同的,
+         * 我们直接添加到集合中即可
+         */
+        int[] img = new int[]{R.drawable.ic_profile, R.drawable.ic_profile, R.drawable.ic_profile, R.drawable.ic_profile, R.drawable.ic_profile, R.drawable.ic_profile, R.drawable.ic_profile};
+        //图片右边的第一排文字
+        String[] text1 = new String[]{"Ben78", "emily4", "kyoto7", "gigi7", "holistic5"};
+        //图片右边的第二排文字
+        String[] text2 = new String[]{"for Tent1", "for Tent1", "for Tent1", "for Tent1", "for Tent1"};
+
+        /*
+         * 实例化泛型集合listDate
+         * 使用MyEclipse开发的朋友,你的实例化代码应该是这样的
+         * listDate = new ArrayList<Map<String,Object>>();
+         *
+         * 但请注意:对于Android Studio来说这样写,你的代码底下会有烦人的波浪线,
+         * 为什么会这样,有一种说法是:
+         * 因为Android Studio需要的JDK版本是7.0及以上,这种JDK版本不支持此种写法
+         */
 
         myStatusText = (TextView)findViewById(R.id.greetingMessage);
         mSignOutButton = (Button) findViewById(R.id.sign_out_button);

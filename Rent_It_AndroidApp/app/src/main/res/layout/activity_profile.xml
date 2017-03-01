@@ -19,9 +19,18 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <include
-                android:id="@+id/toolbar"
-                layout="@layout/toolbar" />
+            <TextView
+                android:text="@string/my_account"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:drawableStart="@drawable/ic_function"
+                android:drawableLeft="@drawable/ic_function"
+                android:id="@+id/title"
+                android:background="@color/colorAccent"
+                />
 
             <TabHost
                 android:layout_width="match_parent"
@@ -163,15 +172,7 @@
     </LinearLayout>
 
 
-    <TextView
-        android:text="@string/my_account"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:layout_marginLeft="120dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="12dp"
-        android:id="@+id/title" />
+
 
     <fragment
         android:id="@+id/fragment_navigation_drawer"

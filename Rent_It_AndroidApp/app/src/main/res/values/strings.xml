@@ -38,6 +38,11 @@
     <string name="title_messages">Messages</string>
     <string name="title_friends">Friends</string>
     <string name="title_home">Home</string>
+    <string name="title_trade_item">Trade Item</string>
+    <string name="my_inventory">My Inventory</string>
+    <string name="my_rentals">My Rentals</string>
+    <string name="claims">Claims</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -77,10 +82,20 @@
     <string name="email">EMAIL</string>
     <string name="your_email_address">Your Email address</string>
     <string name="your_real_name">Your real name</string>
+    <string name="item_name">item's name</string>
+    <string name="return_on_date">Returned on date</string>
+    <string name="file_damage_claim">File Damage Claim ></string>
+    <string name="last_rented_on_date">Last rented on date</string>
+    <string name="edit_listing">Edit Listing ></string>
+    <string name="write_review">Write Review ></string>
+    <string name="requested_by_sb">Rental Requested by somebody </string>
+    <string name="lend_item">Lend Item ></string>
+    <string name="rent_item">Rent Item ></string>
+    <string name="return_item">Return Item ></string>
+    <string name="requested_booking_on"> Requested booking on date</string>
 
 
-
-
+<!-- test-->
     <string-array name="names">
                  <item >Person1</item>
                  <item >Person2</item>
@@ -92,4 +107,30 @@
                  <item >Person8</item>
                  <item >Person9</item>
              </string-array>
+
+    <string-array name="claims">
+        <item >claim1</item>
+        <item >claim2</item>
+        <item >claim3</item>
+        <item >claim4</item>
+        <item >claim5</item>
+        <item >claim6</item>
+        <item >claim7</item>
+        <item >claim8</item>
+        <item >claim9</item>
+    </string-array>
+
+    <string-array name="item">
+        <item >item1</item>
+        <item >item2</item>
+        <item >item3</item>
+        <item >item4</item>
+        <item >item5</item>
+        <item >item6</item>
+        <item >item7</item>
+        <item >item8</item>
+        <item >item9</item>
+    </string-array>
+
+
 </resources>

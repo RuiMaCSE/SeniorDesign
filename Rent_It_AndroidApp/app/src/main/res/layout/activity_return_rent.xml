@@ -21,6 +21,7 @@
             <include
                 android:id="@+id/toolbar"
                 layout="@layout/toolbar" />
+
         </LinearLayout>
 
 
@@ -38,7 +39,7 @@
                 android:layout_marginLeft="70dp"
                 android:layout_marginStart="70dp"
                 android:layout_marginTop="35dp"
-                app:srcCompat="@drawable/ic_return"
+                app:srcCompat="@drawable/icon_return"
                 android:id="@+id/Rent_Image" />
 
 
@@ -96,6 +97,7 @@
         android:layout_marginLeft="100dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="15dp"
+
         android:id="@+id/start_rent"
         android:textSize="25sp"/>
 
