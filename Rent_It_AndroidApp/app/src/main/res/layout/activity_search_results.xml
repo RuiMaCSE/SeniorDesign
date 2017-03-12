@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#eee"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/search_et_input"
+
+                android:layout_width="263dp"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:drawableStart="@drawable/ic_function"
+                android:drawableLeft="@drawable/ic_function"
+
+                android:background="@color/colorAccent"
+                android:hint="Key words"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_search"
+                android:id="@+id/imageButton"
+                android:layout_centerVertical="true"
+                android:background="@color/colorAccent"
+                android:layout_toRightOf="@+id/search_et_input"
+                android:layout_toEndOf="@+id/search_et_input"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <TextView
+            android:text="Filter by Rating:"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:id="@+id/textView9"
+            android:layout_weight="1" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:numStars = "5"
+            android:rating   = "4"
+
+            android:layout_marginTop="10dp"
+
+            android:id="@+id/ratingBar2" />
+    </LinearLayout>
+
+    <ListView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:cacheColorHint="#00000000"
+          android:dividerHeight="30dp"
+          android:drawSelectorOnTop="true"
+          android:scrollbars="horizontal|vertical"
+          android:fastScrollEnabled="true"
+          android:fadingEdge="vertical"
+
+          android:entries="@array/item"/>
+</LinearLayout>

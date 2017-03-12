@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#eee"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/search_et_input"
+
+                android:layout_width="263dp"
+                android:layout_height="60dp"
+                android:padding="16dp"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:drawableStart="@drawable/ic_function"
+                android:drawableLeft="@drawable/ic_function"
+                android:drawableRight="@drawable/ic_search"
+                android:background="@color/colorAccent"
+                android:hint="Key words"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_search"
+                android:id="@+id/imageButton"
+                android:layout_centerVertical="true"
+                android:background="@color/colorAccent"
+                android:layout_toRightOf="@+id/search_et_input"
+                android:layout_toEndOf="@+id/search_et_input"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:text="@string/camp"
+        android:textSize="25sp"
+        android:textColor="#FFFF"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/bg_camp"
+        android:id="@+id/camping" />
+
+    <Button
+        android:text="@string/tools"
+        android:layout_width="match_parent"
+        android:textSize="25sp"
+        android:textColor="#FFFF"
+        android:layout_height="90dp"
+        android:background="@drawable/bg_tools"
+        android:id="@+id/tools" />
+
+    <Button
+        android:text="@string/wheels"
+        android:layout_width="match_parent"
+        android:textSize="25sp"
+        android:textColor="#FFFF"
+        android:layout_height="90dp"
+        android:background="@drawable/bg_wheels"
+        android:id="@+id/wheels" />
+
+    <Button
+        android:text="@string/electronics"
+        android:layout_width="match_parent"
+        android:textSize="25sp"
+        android:textColor="#FFFF"
+        android:layout_height="90dp"
+        android:background="@drawable/bg_electronics"
+        android:id="@+id/electronics" />
+
+    <Button
+        android:text="@string/sports"
+        android:layout_width="match_parent"
+        android:textSize="25sp"
+        android:textColor="#FFFF"
+        android:layout_height="90dp"
+        android:background="@drawable/bg_sports"
+        android:id="@+id/sports" />
+
+    <Button
+        android:text="@string/home"
+        android:layout_width="match_parent"
+        android:textSize="25sp"
+        android:textColor="#FFFF"
+        android:layout_height="90dp"
+        android:background="@drawable/bg_home"
+        android:id="@+id/home" />
+</LinearLayout>

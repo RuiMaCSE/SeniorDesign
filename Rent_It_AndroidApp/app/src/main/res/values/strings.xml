@@ -82,7 +82,7 @@
     <string name="email">EMAIL</string>
     <string name="your_email_address">Your Email address</string>
     <string name="your_real_name">Your real name</string>
-    <string name="item_name">item's name</string>
+    <string name="item_name">item name</string>
     <string name="return_on_date">Returned on date</string>
     <string name="file_damage_claim">File Damage Claim ></string>
     <string name="last_rented_on_date">Last rented on date</string>
@@ -92,9 +92,36 @@
     <string name="lend_item">Lend Item ></string>
     <string name="rent_item">Rent Item ></string>
     <string name="return_item">Return Item ></string>
+    <string name="camp">Camping</string>
+    <string name="tools">Tools</string>
+    <string name="wheels">Wheels</string>
+    <string name="electronics">Electronics</string>
+    <string name="sports">Sports</string>
+    <string name="home">Home</string>
+    <string name="zip">zip code</string>
+    <string name="status">status</string>
+    <string name="rental">($30/day)</string>
+    <string name="rental2">$30/day</string>
+    <string name="description">details of description</string>
+    <string name="view_images">View Images</string>
+    <string name="condition">Condition</string>
+    <string name="reviews">Reviews</string>
+    <string name="review_title">Outstanding!</string>
+    <string name="available">Available</string>
+    <string name="four_person_tent">4 Person Tent</string>
+    <string name="code48085">48085</string>
     <string name="requested_booking_on"> Requested booking on date</string>
-
-
+    <string name="condition_details">condition details</string>
+    <string name="more_reviews">Read More Reviews</string>
+    <string name="owner">Owner</string>
+    <string name="owner_name">Jasmine</string>
+    <string name="member">Member since 2017</string>
+    <string name="rent_now">Rent Now</string>
+    <string name="return_now">Return Now</string>
+    <string name="count">(3)</string>
+    <string name="search_title">4 Person Tent</string>
+    <string name="search_title2">4 Person Tent 48085</string>
+    <string name="request_booking">Request Booking</string>
 <!-- test-->
     <string-array name="names">
                  <item >Person1</item>

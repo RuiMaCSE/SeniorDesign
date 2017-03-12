@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- left_false and function of the buttons -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/container_body"
+            android:layout_width="fill_parent"
+            android:layout_height="950dp"
+            >
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="192dp"
+                android:layout_marginTop="15dp"
+
+                app:srcCompat="@drawable/image_camp"
+                android:id="@+id/imageView"
+
+                />
+
+            <TextView
+                android:text="@string/view_images"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_images"
+                android:textSize="20sp"
+                android:textColor="#FFFF"
+                android:layout_marginBottom="16dp"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="240dp"
+                android:layout_marginStart="240dp" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="39dp"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:numStars = "5"
+                android:rating   = "3"
+                android:id="@+id/ratingBar"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="@string/four_person_tent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/name"
+                android:layout_below="@+id/imageView"
+                android:layout_alignLeft="@+id/ratingBar"
+                android:layout_alignStart="@+id/ratingBar" />
+
+            <TextView
+                android:text="@string/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_toRightOf="@+id/ratingBar"
+                android:layout_toEndOf="@+id/ratingBar"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="7dp"
+                android:textSize="20sp"
+                android:id="@+id/count" />
+
+            <TextView
+                android:text="@string/available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginStart="21dp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/availability"
+                android:layout_alignTop="@+id/name"
+                android:layout_alignLeft="@+id/view_images"
+                android:layout_alignStart="@+id/view_images" />
+
+            <TextView
+                android:text="@string/code48085"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/availability"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignLeft="@+id/availability"
+                android:layout_alignStart="@+id/availability"
+                android:id="@+id/code" />
+
+            <TextView
+                android:text="@string/rental2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orangered"
+                android:textSize="22sp"
+                android:id="@+id/rental"
+                android:layout_alignTop="@+id/count"
+                android:layout_alignLeft="@+id/view_images"
+                android:layout_alignStart="@+id/view_images"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:text="@string/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:id="@+id/description"
+                android:textSize="15sp"
+                android:layout_below="@+id/ratingBar"
+                android:layout_alignLeft="@+id/ratingBar"
+                android:padding="10dp"
+                android:layout_alignStart="@+id/ratingBar" />
+
+            <TextView
+                android:text="@string/condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/condition"
+                android:layout_below="@+id/description"
+                android:layout_alignLeft="@+id/name"
+                android:layout_alignStart="@+id/name" />
+
+            <TextView
+                android:text="@string/condition_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:layout_marginTop="9dp"
+                android:id="@+id/condition_description"
+                android:layout_below="@+id/condition"
+                android:layout_alignLeft="@+id/description"
+                android:layout_alignStart="@+id/description" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/divider_line"
+                android:id="@+id/divider_line"
+                android:layout_marginTop="26dp"
+                android:layout_alignTop="@+id/condition_description"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="@string/reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reviews"
+                android:textSize="25sp"
+                android:layout_below="@+id/condition_description"
+                android:layout_alignLeft="@+id/condition_description"
+                android:layout_alignStart="@+id/condition_description"
+                android:layout_marginTop="34dp" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/ic_profile"
+                android:layout_marginTop="22dp"
+                android:id="@+id/profile"
+                android:layout_below="@+id/reviews"
+                android:layout_alignRight="@+id/condition"
+                android:layout_alignEnd="@+id/condition" />
+
+            <TextView
+                android:text="@string/review_title"
+                android:textSize="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:layout_below="@+id/reviews"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_toRightOf="@+id/reviews"
+                android:layout_toEndOf="@+id/reviews"
+                android:numStars = "5"
+                android:rating   = "4"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:id="@+id/ratingBar2" />
+
+            <TextView
+                android:text="@string/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/review"
+                android:textSize="15sp"
+                android:layout_below="@+id/profile"
+                android:layout_alignLeft="@+id/title"
+                android:layout_alignStart="@+id/title" />
+
+            <TextView
+                android:text="@string/more_reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView21"
+                android:textSize="15sp"
+                android:textColor="@color/orangered"
+                android:layout_below="@+id/review"
+                android:layout_toRightOf="@+id/count"
+                android:layout_toEndOf="@+id/count" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/divider_line"
+                android:id="@+id/divider_line2"
+                android:layout_below="@+id/textView21"
+                android:layout_alignRight="@+id/textView21"
+                android:layout_alignEnd="@+id/textView21" />
+
+            <TextView
+                android:text="@string/owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/owner"
+                android:textSize="25sp"
+                android:layout_alignTop="@+id/divider_line2"
+                android:layout_alignLeft="@+id/condition"
+                android:layout_alignStart="@+id/condition"
+                android:layout_marginTop="46dp" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/ic_profile"
+                android:layout_marginTop="15dp"
+                android:id="@+id/profile2"
+                android:layout_below="@+id/owner"
+                android:layout_alignLeft="@+id/profile"
+                android:layout_alignStart="@+id/profile" />
+
+            <TextView
+                android:text="@string/owner_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/owner_name"
+                android:textSize="25sp"
+                android:layout_marginTop="7dp"
+                android:layout_below="@+id/owner"
+                android:layout_alignLeft="@+id/ratingBar2"
+                android:layout_alignStart="@+id/ratingBar2" />
+
+            <TextView
+                android:text="@string/member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView23"
+                android:textSize="15sp"
+                android:layout_marginTop="9dp"
+                android:layout_below="@+id/owner_name"
+                android:layout_alignRight="@+id/title"
+                android:layout_alignEnd="@+id/title" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rent_now"
+                android:id="@+id/rent_now_button"
+                android:background="@color/colorAccent"
+                android:layout_gravity="center_horizontal"
+
+                android:layout_below="@+id/profile2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <TextView
+        android:text="@string/search_title"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="510dp"
+        android:drawableStart="@drawable/ic_action_back"
+        android:drawableLeft="@drawable/ic_action_back"
+        android:id="@+id/start_rent"
+        android:background="@color/colorAccent"
+      />
+
+
+
+
+</android.support.v4.widget.DrawerLayout>
