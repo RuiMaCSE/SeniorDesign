@@ -122,6 +122,9 @@
     <string name="search_title">4 Person Tent</string>
     <string name="search_title2">4 Person Tent 48085</string>
     <string name="request_booking">Request Booking</string>
+    <string name="inbox">Inbox</string>
+    <string name="key_words">Key words</string>
+
 <!-- test-->
     <string-array name="names">
                  <item >Person1</item>

@@ -88,7 +88,7 @@ public class MainActivity extends BaseActivity
          */
         setContentView(R.layout.activity_main);
         //得到ListView控件
-        listView = (ListView) findViewById(R.id.listView);
+        //listView = (ListView) findViewById(R.id.listView);
 
         /*
          * 把ListView要显示的图片和文字声明出来,暂时存放在数组中,为插入到listDate做准备
