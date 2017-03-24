@@ -41,10 +41,18 @@
         tools:context=".MainActivity" >
 
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="date"
+            android:background="#ffff"
+            android:onClick=""
+            />
+
         <EditText
             android:id="@+id/txt"
             style="@style/edittext_msg"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Type message" >

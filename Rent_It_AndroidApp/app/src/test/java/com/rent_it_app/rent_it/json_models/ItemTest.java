@@ -7,7 +7,7 @@ import java.lang.reflect.Field;
 import static org.junit.Assert.*;
 
 /**
- * Created by Nagoya on 2/14/17.
+ * Created by Nagoya on 2/14/17./
  */
 public class ItemTest {
     @Test
@@ -132,11 +132,33 @@ public class ItemTest {
     @Test
     public void getValue() throws Exception {
 
+        //given
+        final Item item = new Item();
+        final Field field = item.getClass().getDeclaredField("value");
+        field.setAccessible(true);
+        field.set(item, 10.0);
+
+        //when
+        final double result = item.getValue();
+
+        //then
+        assertEquals(result, 10.0,0);
+
     }
 
     @Test
     public void setValue() throws Exception {
 
+        //given
+        final Item item = new Item();
+
+        //when
+        item.setValue(10.0);
+
+        //then
+        final Field field = item.getClass().getDeclaredField("value");
+        field.setAccessible(true);
+        assertEquals("Fields didn't match", field.get(item), 10.0);
     }
 
     @Test

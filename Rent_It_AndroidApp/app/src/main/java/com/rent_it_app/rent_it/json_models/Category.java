@@ -1,7 +1,7 @@
 package com.rent_it_app.rent_it.json_models;
 
 /**
- * Created by Miz on 2/1/17.
+ * Created by Miz on 2/1/17./
  */
 
 import java.io.Serializable;
